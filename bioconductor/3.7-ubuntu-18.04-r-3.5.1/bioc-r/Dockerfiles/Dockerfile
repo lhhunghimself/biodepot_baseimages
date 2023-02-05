@@ -10,7 +10,7 @@ RUN mkdir -p $RHOME_DIR
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends apt-utils fonts-dejavu \
-    build-essential xorg-dev gcc gcc-multilib gobjc++ gfortran libblas-dev libcairo2-dev liblzma-dev libreadline-dev aptitude \
+    build-essential xorg-dev gcc gobjc++ gfortran libblas-dev libcairo2-dev liblzma-dev libreadline-dev aptitude \
     libbz2-dev libpcre3-dev libcurl4-openssl-dev libssl-dev libxml2-dev \
     software-properties-common wget texinfo texlive texlive-fonts-extra default-jdk && \
 				cd /tmp && wget https://cran.r-project.org/src/base/R-3/R-3.5.1.tar.gz && \
